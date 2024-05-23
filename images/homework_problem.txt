@@ -1,0 +1,34 @@
+For each image, come up with code and other associated files which:
+
+1. Locates each spot in every image.
+2. Displays the location of each spot in each image via an overlay. Minimally, the center of each spot should be found and displayed.
+3. Is generalizable to spot images with similar properties. That is, the spot size, image size and relative spot locations are the same. You can assume that the spot patterns will not be rotated, and that the colors and intensities will have statistics similar to the images provided.
+4. Is written entirely in python, using standard python packages.
+5. Includes necessary files and instructions to install your preferred version of python and packages.
+6. Includes necessary files and instructions to execute (and possibly test) your code on all images in a directory.
+
+The answer to the homework problem is a zip file of a directory containing code, support files and annotated (the original image with the spot location overlay) image files.
+
+Be prepared to discuss:
+1. The reasoning behind your approach.
+2. The weakness(es) of your approach and what might enhance it.
+3. How you would develop and maintain such an image processing solution on a production device.
+
+
+## My Solution:
+
+Two different solution is provided. 
+
+Solution 1 (wavelet_denoising.py): Wavelet transform is used for denoising and creating a grayscale mask, which is then thresholded 
+to create a binary mask. SimpleBlobDetector_create is applied on the binary mask to find the coordinates of 
+the centers.
+
+Solution 2 (kmeans_clustering.py): This approach uses K-means clustering to create a mask and then uses Hough_Circles to find the centers. 
+
+
+
+  
+ 
+
+
+

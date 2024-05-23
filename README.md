@@ -38,25 +38,6 @@ Solution 2 (kmeans_clustering.py): This approach uses K-means clustering to crea
 The answer to the homework problem is given by a zip file of a directory containing code, support files and annotated (the original image with the spot location overlay) image files.
 
 
-# Deploying the homework problem
-
-Edit 
-
-    images/homework_problem.txt
-
-to reflect your latest intent.
-
-Assure the latest version of the repo is pushed to git.
-
-Dump the repo commit SHA to a file. from the images directory, do:
-
-    git rev-parse HEAD > version_sha.txt
-
-Note that you should not check this in to git. This is simply for reproducibility.
-
-zip the images directory (right click and pull down to "Send to", etc in Windows) and send it to your prospective hire!
-
-I would suggest NOT checking the zip file into git.
 
 
 
